@@ -13,10 +13,10 @@ export function GlobeHero() {
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
-    atmosphereAltitude: 0.2,
+    atmosphereAltitude: 0.1,
     emissive: "#062056",
     emissiveIntensity: 0.1,
-    shininess: 1,
+    shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
     ambientLight: "#38bdf8",
     directionalLeftLight: "#ffffff",
@@ -395,8 +395,8 @@ export function GlobeHero() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto bg-transparent relative w-full">
-      <div className="max-w-7xl mx-auto w-full  relative h-auto md:h-[40rem] px-4">
+    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-transparent bg-transparent relative w-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
             opacity: 0,
@@ -410,7 +410,11 @@ export function GlobeHero() {
             duration: 1,
           }}
           className="div"
-        ></motion.div>
+        >
+          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
+            We sell soap worldwide
+          </h2>
+        </motion.div>
         <World data={sampleArcs} globeConfig={globeConfig} />;
       </div>
     </div>
