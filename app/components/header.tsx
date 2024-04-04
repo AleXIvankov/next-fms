@@ -28,7 +28,6 @@ export default function Header() {
       <div className="flex flex-row justify-between items-center w-full p-5 max-h-18 mx-auto px-2 2xl:px-16">
         <Link href="/" className="w-full">
           <img
-            data-hide-on-theme="dark"
             src="/img/logo-fms-no-background1.svg"
             alt="logo-fms"
             className="w-full h-6 mx-auto"

@@ -10,7 +10,7 @@ import {
 import { useRef } from "react";
 import { cn } from "@/app/utils/cn";
 
-export function MoveBorder({
+export function Button({
   borderRadius = "1.75rem",
   children,
   as: Component = "button",
@@ -32,7 +32,7 @@ export function MoveBorder({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl  h-10 w-40 p-[1px] overflow-hidden ",
         containerClassName
       )}
       style={{
@@ -56,7 +56,7 @@ export function MoveBorder({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative bg-indigo-800/[0.8] dark:bg-indigo-600/50 border border-gray-500 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
           className
         )}
         style={{
@@ -71,7 +71,7 @@ export function MoveBorder({
 
 export const MovingBorder = ({
   children,
-  duration = 2000,
+  duration = 3000,
   rx,
   ry,
   ...otherProps

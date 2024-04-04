@@ -2,9 +2,7 @@
 
 import { Footer } from "flowbite-react";
 import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function FooterComponent() {
   return (
@@ -16,8 +14,7 @@ export default function FooterComponent() {
         <div className="w-full justify-between flex items-center">
           <Footer.LinkGroup col className="text-sky-600 ">
             <Link
-              href="/"
-              target="_blanc"
+              href="/pages/about"
               rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
@@ -25,7 +22,6 @@ export default function FooterComponent() {
             </Link>
             <Link
               href="/pages/contact"
-              target="_blanc"
               rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
@@ -34,9 +30,27 @@ export default function FooterComponent() {
           </Footer.LinkGroup>
 
           <Footer.LinkGroup className="gap-6">
-            <FaFacebookF className="hover:text-blue-700 cursor-pointer w-6 h-6" />
-            <FaXTwitter className="hover:text-gray-700 cursor-pointer w-6 h-6" />
-            <FaInstagram className="hover:text-purple-700 cursor-pointer w-6 h-6" />
+            <Link
+              href="https://www.facebook.com/hagergroup/"
+              target="_blanc"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-blue-800 cursor-pointer w-6 h-6" />
+            </Link>
+            <Link
+              href="https://fr.linkedin.com/company/hagergroup"
+              target="_blanc"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="hover:text-teal-500 cursor-pointer w-6 h-6" />
+            </Link>
+            <Link
+              href="https://www.instagram.com/hagergroup/"
+              target="_blanc"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-purple-700 cursor-pointer w-6 h-6" />
+            </Link>
           </Footer.LinkGroup>
         </div>
         <Footer.Divider />

@@ -412,7 +412,7 @@ export function GlobeHero() {
           className="div"
         >
           <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            We sell soap worldwide
+            Hager Electro SAS / U1 / FMS
           </h2>
         </motion.div>
         <World data={sampleArcs} globeConfig={globeConfig} />;
