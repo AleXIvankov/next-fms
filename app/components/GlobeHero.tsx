@@ -13,9 +13,9 @@ export function GlobeHero() {
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
-    atmosphereAltitude: 0.1,
+    atmosphereAltitude: 0.15,
     emissive: "#062056",
-    emissiveIntensity: 0.1,
+    emissiveIntensity: 0.2,
     shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
     ambientLight: "#38bdf8",
@@ -28,7 +28,7 @@ export function GlobeHero() {
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
-    autoRotateSpeed: 0.5,
+    autoRotateSpeed: 0.4,
   };
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
   const sampleArcs = [
@@ -396,7 +396,7 @@ export function GlobeHero() {
 
   return (
     <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-transparent bg-transparent relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[35rem] px-2">
         <motion.div
           initial={{
             opacity: 0,
@@ -411,11 +411,11 @@ export function GlobeHero() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
+          <h2 className="text-center text-xl md:text-4xl pt-2 font-bold text-black dark:text-white">
             Hager Electro SAS / U1 / FMS
           </h2>
         </motion.div>
-        <World data={sampleArcs} globeConfig={globeConfig} />;
+        <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </div>
   );

@@ -15,7 +15,6 @@ import {
   HomeIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
-import { MoveBorder } from "./ui/moving-border";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

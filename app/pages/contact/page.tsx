@@ -5,10 +5,11 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "@/app/components/ui/moving-border";
 
+import Image from "next/image";
+
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
-  const formRef = useRef(null);
 
   const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -16,8 +17,8 @@ export default function Contact() {
   const handleFocus = () => {};
   const handleBlur = () => {};
 
-  const handleSubmit = (e) => {
-    e.preventDefaul();
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
     setIsLoading(true);
 
     const templateParams = {
@@ -50,11 +51,18 @@ export default function Contact() {
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="w-full h-full">
-        <section className=" relative flex lg:flex-row flex-col p-2 max-w-3xl items-center mx-auto min-h-screen">
-          <div className="flex-1 min-w-[50%] flex flex-col">
+        <section className=" relative flex lg:flex-row flex-col p-5 max-w-3xl items-center mx-auto min-h-screen gap-2">
+          <div className="flex-1 min-w-[40%] flex flex-col items-center gap-2">
             <h1 className="text-center text-3xl text-gray-700 dark:text-gray-300 my-5 font-light">
               Contactez-nous
             </h1>
+            <Image
+              src={"/img/contact.png"}
+              width={280}
+              height={200}
+              className="mx-auto rounded-3xl ml-8 border border-solid border-indigo-700 rotate-3"
+              alt="Contact image"
+            ></Image>
           </div>
           <form
             className="w-full flex flex-1 flex-col gap-5 mt-10"
@@ -115,9 +123,8 @@ export default function Contact() {
               borderRadius="1rem"
               className="border-sky-900/50 w-full h-10 dark:border-indigo-600/50  text-black dark:text-white border-neutral-200 dark:border-slate-800"
               disabled={isLoading}
-              // onFocus={handleFocus}
-              // onBlur={handleBlur}
-              // onClick={handleSubmit}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
             >
               {isLoading ? "Sending..." : "Envoyer"}
             </Button>

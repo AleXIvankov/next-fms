@@ -23,8 +23,8 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <FooterComponent />
         </Providers>
-        <FooterComponent />
       </body>
     </html>
   );
