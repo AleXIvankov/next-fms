@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ThemeButton from "./ThemeButton";
+import ThemeButton from "./themeButton";
 import Link from "next/link";
 import {
   Bars3Icon,
@@ -15,6 +15,7 @@ import {
   HomeIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
