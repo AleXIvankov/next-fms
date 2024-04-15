@@ -6,7 +6,7 @@ import { OtherShowImages, ShowImages } from "@/app/components/visual";
 import { useFeatureStore } from "@/app/zustand/store";
 import { Checkbox } from "flowbite-react";
 import { stagger, useAnimate } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Button } from "flowbite-react";
 import { useHidePageOverflow } from "@/app/utils/toggle-page-overflow";
 import { useEscapePress } from "@/app/utils/use-escape-press";
@@ -114,44 +114,47 @@ export default function Refer001() {
   }, [animate, fullScreenFeature]);
 
   return (
-    <div className="mx-auto max-w-6xl px-4">
-      <div className="">characteristique</div>
-      <div ref={scope} className="">
-        {features.map((feature) => (
-          <feature.visual id={feature.id} key={feature.id} />
-        ))}
-        <Button
-          pill
-          size="xs"
-          gradientDuoTone="purpleToBlue"
-          className="back-to-site-btn fixed bottom-5 left-1/2 -translate-x-1/2 z-10 opacity-0 translate-y-[300%]"
-          onClick={() => setFullScreenFeature(null)}
-        >
-          Retour au réglage
-        </Button>
-        <div className="flex w-full gap-10  items-start">
-          <div className="w-full py-[50vh]">
-            <ul>
-              {features.map((feature) => (
-                <li key={feature.id} className="h-screen">
-                  <FeatureText id={feature.id}>
-                    {feature.id} <br /> {feature.text}
-                  </FeatureText>
+    <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.4] bg-grid-small-black/[0.3]">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="">caractéristiques</div>
+        <div ref={scope} className="">
+          {features.map((feature) => (
+            <feature.visual id={feature.id} key={feature.id} />
+          ))}
+          <Button
+            pill
+            size="xs"
+            gradientDuoTone="purpleToBlue"
+            className="back-to-site-btn fixed bottom-5 left-1/2 -translate-x-1/2 z-10 opacity-0 translate-y-[300%]"
+            onClick={() => setFullScreenFeature(null)}
+          >
+            Retour au réglage
+          </Button>
+          <div className="flex w-full gap-10  items-start">
+            <div className="w-full py-[50vh]">
+              <ul>
+                {features.map((feature) => (
+                  <li key={feature.id} className="h-screen">
+                    <FeatureText id={feature.id}>
+                      {feature.id} <br /> {feature.text}
+                    </FeatureText>
 
-                  <Checkbox className="feature-text text-lime-500 bg-lime-50 border-lime-300 rounded focus:ring-lime-200  dark:focus:ring-gray-400 dark:ring-offset-gray-200 dark:bg-gray-700 dark:border-gray-600" />
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="w-full sticky top-0 flex h-screen items-center">
-            <div className="relative w-full aspect-square bg-gray-100 dark:bg-black [&:has(>_.active-card)]:bg-transparent rounded-2xl">
-              {features.map((feature) => (
-                <feature.card id={feature.id} key={feature.id} />
-              ))}
+                    <Checkbox className="w-5 h-5 feature-text text-lime-500 bg-lime-50 border-lime-300 rounded focus:ring-lime-200  dark:focus:ring-gray-400 dark:ring-offset-gray-200 dark:bg-gray-700 dark:border-gray-600" />
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="w-full sticky top-0 flex h-screen items-center">
+              <div className="relative w-full aspect-square bg-gray-100 dark:bg-black [&:has(>_.active-card)]:bg-transparent rounded-2xl">
+                {features.map((feature) => (
+                  <feature.card id={feature.id} key={feature.id} />
+                ))}
+              </div>
             </div>
           </div>
+          <div className="h-[50vh]"></div>
         </div>
-        <div className="h-[50vh]"> Timer </div>
       </div>
     </div>
   );

@@ -127,9 +127,10 @@ export default function Header() {
             <Link href="/pages/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center gap-4 hover:border-b border-b-sky-400 hover:text-sky-400 text-xl py-3"
+                className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900  uppercase flex items-center gap-4 hover:border-b border-b-sky-400 hover:text-sky-400 text-xl py-3"
               >
-                <FaceSmileIcon className="w-5 h-5 " /> About us
+                <FaceSmileIcon className="w-5 h-5 text-white" />
+                About us
               </li>
             </Link>
           </ul>
