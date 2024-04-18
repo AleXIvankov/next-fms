@@ -56,7 +56,7 @@ export default function FooterComponent() {
         <Footer.Divider />
         <div>
           <Footer.Copyright
-            by="FMS App / HAGER Group"
+            by="Hager Electro SAS / HAGER Group"
             year={new Date().getFullYear()}
           />
         </div>

@@ -27,11 +27,11 @@ export default function Header() {
     <nav className="sticky z-50 w-full h-20 bg-black mx-auto justify-between rounded-bl-xl rounded-br-sm border-b-2 border-indigo-600/50">
       <div className="flex flex-row justify-between items-center w-full p-5 max-h-18 mx-auto px-2 2xl:px-16">
         <Link href="/" className="w-full">
-          <img
-            src="/img/logo-fms-no-background1.svg"
-            alt="logo-fms"
-            className="w-full h-6 mx-auto"
-          />
+          <div>
+            <h1 className="text-white dark:text-blue-400 font-extrabold text-2xl">
+              #BZ-01
+            </h1>
+          </div>
         </Link>
         <img
           src="/img/Hager-Logo.svg"
@@ -105,16 +105,6 @@ export default function Header() {
               </li>
             </Link>
 
-            <Link href="/pages/b5000">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center border-orange-300 hover:text-orange-300 gap-4 hover:border-b text-xl py-3"
-              >
-                <BoltIcon className="w-5 h-5 " />
-                B5000
-              </li>
-            </Link>
-
             <Link href="/pages/contact">
               <li
                 onClick={() => setMenuOpen(false)}
@@ -127,9 +117,9 @@ export default function Header() {
             <Link href="/pages/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900  uppercase flex items-center gap-4 hover:border-b border-b-sky-400 hover:text-sky-400 text-xl py-3"
+                className="uppercase flex items-center gap-4 hover:border-b border-b-sky-400 hover:text-sky-500 text-xl py-3"
               >
-                <FaceSmileIcon className="w-5 h-5 text-white" />
+                <FaceSmileIcon className="w-5 h-5 " />
                 About us
               </li>
             </Link>

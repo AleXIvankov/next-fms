@@ -10,9 +10,9 @@ export default function page() {
         <div className="p-1 md:w-2/3 w-full">
           <GlobeHero />
         </div>
-        <div className="md:w-1/3 w-full overflow-y-auto">
+        <div className="md:w-1/3 w-full overflow-y-auto lg:ml-[-10%]">
           <h2 className="text-2xl text-center p-3 font-bold">
-            Bienvenue sur notre site dédié à la machine FMS.
+            Bienvenue sur notre site dédié à la machine #BZ-XX.
           </h2>
           <p className="text-xl md:text-lg p-5 text-center md:text-left place-content-evenly w-full font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-600 py-4 px-4">
             Explorez notre plateforme pour trouver des informations précieuses,

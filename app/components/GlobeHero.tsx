@@ -411,8 +411,8 @@ export function GlobeHero() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl pt-2 font-bold text-black dark:text-white">
-            Hager Electro SAS / U1 / FMS
+          <h2 className="text-center text-2xl md:text-4xl pt-2 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-600">
+            Hager Electro SAS / U1
           </h2>
         </motion.div>
         <World data={sampleArcs} globeConfig={globeConfig} />
