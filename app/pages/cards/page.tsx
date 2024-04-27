@@ -120,7 +120,7 @@ export default function Cards() {
                       src="/img/gears.svg"
                       height="300"
                       width="400"
-                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl border border-solid border-black"
                       alt="thumbnail"
                     />
                   </CardItem>

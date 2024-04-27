@@ -51,7 +51,7 @@ export default function Header() {
       <div
         className={
           menuOpen
-            ? "fixed right-0 top-20 p-5 sm:w-[65%] md:w-[35%] xl:w-[25%] h-auto bg-sky-200 rounded-bl-2xl rounded-tr-2xl shadow-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-b border-t border-indigo-600/50 ease-in duration-500"
+            ? "sticky sm:fixed right-0 top-20 p-5 sm:w-[65%] md:w-[35%] xl:w-[25%] h-auto bg-sky-200 rounded-bl-2xl rounded-tr-2xl shadow-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-b border-t border-indigo-600/50 ease-in duration-500"
             : "fixed right-[-100%] top-20 p-5 duration-500"
         }
       >
@@ -78,7 +78,7 @@ export default function Header() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center border-teal-300 hover:text-teal-300 gap-4 hover:border-b text-xl py-3"
+                className="uppercase flex items-center border-b-[#0000E7] hover:text-[#0000E7] gap-4 hover:border-b text-xl py-3"
               >
                 <NewspaperIcon className="w-5 h-5 " />
                 Blog
@@ -88,7 +88,7 @@ export default function Header() {
             <Link href="/pages/cards">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center border-purple-200 hover:text-purple-200 gap-4 hover:border-b text-xl py-3"
+                className="uppercase flex items-center border-b-[#0000E7] hover:text-[#0000E7] gap-4 hover:border-b text-xl py-3"
               >
                 <CogIcon className="w-5 h-5 " />
                 Cartes de réglages
@@ -98,29 +98,29 @@ export default function Header() {
             <Link href="/pages/diagnostic">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center border-red-300 hover:text-red-300 gap-4 hover:border-b text-xl py-3"
+                className="uppercase flex items-center border-b-[#0000E7] hover:text-[#0000E7] gap-4 hover:border-b text-xl py-3"
               >
                 <WrenchScrewdriverIcon className="w-5 h-5 " />
                 Aide au diagnostique
               </li>
             </Link>
 
-            <Link href="/pages/contact">
+            <Link href="/pages/soudure">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center gap-4 hover:border-b border-lime-300 hover:text-lime-300 text-xl py-3"
+                className="uppercase flex items-center gap-4 hover:border-b border-b-[#0000E7] hover:text-[#0000E7] text-xl py-3"
               >
-                <PhoneIcon className="w-5 h-5 " /> Contact
+                <BoltIcon className="w-5 h-5 " />
+                Soudure
               </li>
             </Link>
 
-            <Link href="/pages/about">
+            <Link href="/pages/contact">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="uppercase flex items-center gap-4 hover:border-b border-b-sky-400 hover:text-sky-500 text-xl py-3"
+                className="uppercase flex items-center gap-4 hover:border-b border-b-[#0000E7] hover:text-[#0000E7] text-xl py-3"
               >
-                <FaceSmileIcon className="w-5 h-5 " />
-                About us
+                <PhoneIcon className="w-5 h-5 " /> Contact
               </li>
             </Link>
           </ul>

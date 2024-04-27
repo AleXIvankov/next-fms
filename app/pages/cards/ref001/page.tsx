@@ -16,7 +16,7 @@ export default function Refer001() {
     {
       text: `Some text`,
       id: "Step1",
-      card: Img1,
+      card: Img3,
       visual: ShowImages,
     },
     {
@@ -28,25 +28,25 @@ export default function Refer001() {
     {
       text: "Some text..",
       id: "Step3",
-      card: Img1,
-      visual: OtherShowImages,
-    },
-    {
-      text: "Some text..",
-      id: "Step4",
-      card: Img2,
-      visual: OtherShowImages,
-    },
-    {
-      text: "Some text..",
-      id: "Step5",
       card: Img3,
       visual: OtherShowImages,
     },
     {
       text: "Some text..",
-      id: "Step6",
+      id: "Step4",
       card: Img1,
+      visual: OtherShowImages,
+    },
+    {
+      text: "Some text..",
+      id: "Step5",
+      card: Img2,
+      visual: OtherShowImages,
+    },
+    {
+      text: "Some text..",
+      id: "Step6",
+      card: Img3,
       visual: ShowImages,
     },
   ];
@@ -115,7 +115,6 @@ export default function Refer001() {
 
   return (
     <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.4] bg-grid-small-black/[0.3]">
-      {/* Radial gradient for the container to give a faded look */}
       <div className="mx-auto max-w-6xl px-4">
         <div className="">caractéristiques</div>
         <div ref={scope} className="">

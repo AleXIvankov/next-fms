@@ -47,17 +47,51 @@ const FeatureCard = ({ gradient, children, id }: FeatureCardProps) => {
 };
 
 export const Img1 = ({ id }: CardProps) => {
+  const fullScreenFeature = useFeatureStore((store) => store.fullScreenFeature);
+  const isFullScreen = fullScreenFeature === id;
   return (
     <FeatureCard id={id} gradient="from-[#f7f0ff] to-[#a78afe]">
-      <span></span>
+      <img
+        src="/img/hagerForum.svg"
+        alt="image"
+        className={classNames(
+          "rounded-xl shadow-lg absolute left-[10%] top-[10%] w-[50%] transition-transform",
+          isFullScreen ? "scale-0" : "scale-100"
+        )}
+      />
+      <img
+        src="/img/abstractions.png"
+        alt="image"
+        className={classNames(
+          "rounded-xl shadow-lg absolute left-[50%] top-[50%] w-[40%] transition-transform",
+          isFullScreen ? "scale-0" : "scale-100"
+        )}
+      />
     </FeatureCard>
   );
 };
 
 export const Img2 = ({ id }: CardProps) => {
+  const fullScreenFeature = useFeatureStore((store) => store.fullScreenFeature);
+  const isFullScreen = fullScreenFeature === id;
   return (
-    <FeatureCard id={id} gradient="from-[#f5fff7] to-[#adffd8]">
-      <span></span>
+    <FeatureCard id={id} gradient="from-[#34e89e] to-[#00d4ff]">
+      <img
+        src="/img/Midnight.svg"
+        alt="image"
+        className={classNames(
+          "rounded-xl shadow-lg absolute left-[40%] top-[10%] w-[50%] transition-transform",
+          isFullScreen ? "scale-0" : "scale-100"
+        )}
+      />
+      <img
+        src="/img/disjoncteurs.svg"
+        alt="image"
+        className={classNames(
+          "rounded-xl shadow-lg absolute left-[5%] top-[50%] w-[40%] transition-transform",
+          isFullScreen ? "scale-0" : "scale-100"
+        )}
+      />
     </FeatureCard>
   );
 };
@@ -67,26 +101,26 @@ export const Img3 = ({ id }: CardProps) => {
   return (
     <FeatureCard id={id} gradient="from-[#f7f0ff] to-[#38BDF8]">
       <img
-        src="/img/logo-no-background.png"
-        alt="image"
-        className={classNames(
-          "rounded-sm shadow-lg absolute left-[20%] top-[20%] w-[30%] transition-transform",
-          isFullScreen ? "scale-0" : "scale-100"
-        )}
-      />
-      <img
         src="/img/hager-Logo.svg"
         alt="image"
         className={classNames(
-          "rounded-xl shadow-lg absolute left-[60%] top-[20%] w-[20%] transition-transform",
+          "rounded-sm shadow-lg absolute left-[10%] top-[20%] w-[30%] transition-transform",
           isFullScreen ? "scale-0" : "scale-100"
         )}
       />
       <img
-        src="/img/FMS-1500-HagerFront.png"
+        src="/img/gears.svg"
         alt="image"
         className={classNames(
-          "rounded-xl shadow-lg absolute left-[25%] top-[60%] w-[35%] transition-transform",
+          "rounded-xl shadow-lg absolute left-[60%] top-[25%] w-[30%] transition-transform",
+          isFullScreen ? "scale-0" : "scale-100"
+        )}
+      />
+      <img
+        src="/img/disjoncteurs.svg"
+        alt="image"
+        className={classNames(
+          "rounded-xl shadow-lg absolute left-[20%] top-[60%] w-[40%] transition-transform",
           isFullScreen ? "scale-0" : "scale-100"
         )}
       />

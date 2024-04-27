@@ -1,6 +1,6 @@
 "use client";
 
-import { TextInput, Textarea } from "flowbite-react";
+import { Alert, TextInput, Textarea } from "flowbite-react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "@/app/components/ui/moving-border";
@@ -41,7 +41,7 @@ export default function Contact() {
         setForm({ name: "", email: "", message: "" });
       })
       .catch((error) => {
-        setIsLoading(true);
+        setIsLoading(false);
         console.log(error);
       });
   };

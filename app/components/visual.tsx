@@ -30,9 +30,9 @@ export const ShowImages = ({ id }: Props) => {
     <Visual id={id}>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slide={false}>
-          <img src="/img/FMS-1500-HagerFront.png" alt="..." />
-          <img src="/img/hager-Logo.svg" alt="..." />
-          <img src="/img/logo-no-background.png" alt="..." />
+          <img src="/img/Midnight.svg" alt="..." />
+          <img src="/img/gears.svg" alt="..." />
+          <img src="/img/disjoncteurs.svg" alt="..." />
         </Carousel>
       </div>
     </Visual>
@@ -44,9 +44,9 @@ export const OtherShowImages = ({ id }: Props) => {
     <Visual id={id}>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slide={false}>
-          <img src="/img/FMS_1500_Hager Front.png" alt="..." />
+          <img src="/img/abstractions.png" alt="..." />
           <img src="/img/Hager-Logo.svg" alt="..." />
-          <img src="/img/logo-no-background.png" alt="..." />
+          <img src="/img/hagerForum.svg" alt="..." />
         </Carousel>
       </div>
     </Visual>
