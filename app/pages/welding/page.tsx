@@ -4,7 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/app/components/ui/canvas-reveal-effect";
 
-export default function Soudure() {
+export default function Welding() {
   const [hovered, setHovered] = React.useState(false);
   return (
     <div

@@ -105,7 +105,7 @@ export default function Header() {
               </li>
             </Link>
 
-            <Link href="/pages/soudure">
+            <Link href="/pages/welding">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="uppercase flex items-center gap-4 hover:border-b border-b-[#0000E7] hover:text-[#0000E7] text-xl py-3"
