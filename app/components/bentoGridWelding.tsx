@@ -32,9 +32,12 @@ const items = [
   {
     title: "Poste 1",
     description: (
-      <Button size="xs" gradientDuoTone="purpleToBlue" pill className="w-16">
-        &#8658;
-      </Button>
+      <Button
+        size="xs"
+        gradientDuoTone="purpleToBlue"
+        pill
+        className="w-16"
+      ></Button>
     ),
     header: <Skeleton />,
     icon: <BoltIcon className="h-4 w-4 text-neutral-500" />,
@@ -42,9 +45,12 @@ const items = [
   {
     title: "Poste 2",
     description: (
-      <Button size="xs" gradientDuoTone="purpleToBlue" pill className="w-16">
-        &#8658;
-      </Button>
+      <Button
+        size="xs"
+        gradientDuoTone="purpleToBlue"
+        pill
+        className="w-16"
+      ></Button>
     ),
     header: <Skeleton />,
     icon: <BoltIcon className="h-4 w-4 text-neutral-500" />,
@@ -52,9 +58,12 @@ const items = [
   {
     title: "Poste 3",
     description: (
-      <Button size="xs" gradientDuoTone="purpleToBlue" pill className="w-16">
-        &#8658;
-      </Button>
+      <Button
+        size="xs"
+        gradientDuoTone="purpleToBlue"
+        pill
+        className="w-16"
+      ></Button>
     ),
     header: <Skeleton />,
     icon: <BoltIcon className="h-4 w-4 text-neutral-500" />,
@@ -62,9 +71,12 @@ const items = [
   {
     title: "Réglage d'intensité",
     description: (
-      <Button size="xs" gradientDuoTone="purpleToBlue" pill className="w-28">
-        &#10551;
-      </Button>
+      <Button
+        size="xs"
+        gradientDuoTone="purpleToBlue"
+        pill
+        className="w-28"
+      ></Button>
     ),
     header: <Skeleton />,
     icon: <CogIcon className="h-4 w-4 text-neutral-500" />,
@@ -72,9 +84,12 @@ const items = [
   {
     title: "Documents utiles",
     description: (
-      <Button size="xs" gradientDuoTone="purpleToBlue" pill className="w-28">
-        &#10551;
-      </Button>
+      <Button
+        size="xs"
+        gradientDuoTone="purpleToBlue"
+        pill
+        className="w-28"
+      ></Button>
     ),
     header: <Skeleton />,
     icon: <WrenchScrewdriverIcon className="h-4 w-4 text-neutral-500" />,
