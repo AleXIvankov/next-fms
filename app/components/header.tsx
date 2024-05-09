@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ThemeButton from "./themeButton";
+import ThemeButton from "./ThemeButton";
 import Link from "next/link";
 import {
   Bars3Icon,
