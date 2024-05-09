@@ -8,7 +8,7 @@ export default function FooterComponent() {
   return (
     <Footer
       container
-      className="border border-t-2 rounded-bl-none rounded-br-none border-indigo-500/50"
+      className="border border-t-2 rounded-bl-none rounded-br-none border-indigo-600/50"
     >
       <div className="w-full max-w-7xl mx-auto justify-between">
         <div className="w-full justify-between flex items-center">
