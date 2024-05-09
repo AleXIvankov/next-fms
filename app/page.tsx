@@ -16,12 +16,12 @@ export default function page() {
           </h2>
           <p className="text-xl md:text-lg p-5 text-center md:text-left place-content-evenly w-full font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-600 py-4 px-4">
             Explorez notre plateforme pour trouver des informations précieuses,
-            des analyses approfondies et des conseils d&apos;experts pour
-            optimiser votre travail. <br />
+            des analyses approfondies et des conseils d experts pour optimiser
+            votre travail. <br />
             Que vous soyez un professionnel chevronné ou un novice curieux, nous
             sommes la pour vous accompagner dans votre exploration de la
             machine. Rejoignez-nous, alors que nous repoussons les frontières de
-            l&apos;efficacité et de la productivité industrielle.
+            l efficacité et de la productivité industrielle.
           </p>
         </div>
       </div>
