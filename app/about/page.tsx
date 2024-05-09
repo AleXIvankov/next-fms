@@ -20,7 +20,7 @@ export default function About() {
         >
           Hager Electro SAS <br />
           <br />
-          <i className="text-3xl md:text-5xl">U1 / Decoupe "BIHLER"</i>
+          <i className="text-3xl md:text-5xl">'U1 - Decoupe BIHLER'</i>
         </motion.h1>
       </LampContainer>
     </div>
