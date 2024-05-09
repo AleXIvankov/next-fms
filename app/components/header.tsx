@@ -6,7 +6,6 @@ import Link from "next/link";
 import {
   Bars3Icon,
   XMarkIcon,
-  FaceSmileIcon,
   NewspaperIcon,
   WrenchScrewdriverIcon,
   PhoneIcon,
@@ -15,7 +14,6 @@ import {
   HomeIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +22,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="sticky z-50 w-full h-20 bg-black mx-auto justify-between rounded-bl-xl rounded-br-sm border-b-2 border-indigo-600/50">
+    <nav className="sticky z-50 w-full h-20 bg-slate-400  dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black mx-auto justify-between border-b-2 border-indigo-600/50">
       <div className="flex flex-row justify-between items-center w-full p-5 max-h-18 mx-auto px-2 2xl:px-16">
         <Link href="/" className="w-full">
           <div>
@@ -75,7 +73,11 @@ export default function Header() {
               </li>
             </Link>
 
-            <Link href="/">
+            <Link
+              href="https://hagerblogapp.onrender.com/"
+              target="_blanc"
+              rel="noopener noreferrer"
+            >
               <li
                 onClick={() => setMenuOpen(false)}
                 className="uppercase flex items-center border-b-[#0000E7] hover:text-[#0000E7] gap-4 hover:border-b text-xl py-3"

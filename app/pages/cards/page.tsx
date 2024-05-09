@@ -19,7 +19,7 @@ export default function Cards() {
         }}
         className="object-contain flex flex-col sm:flex-row max-h-screen w-full"
       >
-        <div className="h-full w-full p-10 overflow-y-auto hide-scroll items-center justify-center">
+        <div className="h-full w-full p-10 overflow-y-auto z-10 hide-scroll items-center justify-center">
           <div className="w-full flex flex-wrap md:grid-row items-center justify-center gap-10 h-auto object-contain">
             <div className="">
               <CardContainer className="inter-var">

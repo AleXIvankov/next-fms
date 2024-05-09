@@ -14,7 +14,7 @@ export default function FooterComponent() {
         <div className="w-full justify-between flex items-center">
           <Footer.LinkGroup col className="text-sky-600 ">
             <Link
-              href="/pages/about"
+              href="/about"
               rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
