@@ -18,7 +18,7 @@ export default function FooterComponent() {
               rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
-              About Us
+              About
             </Link>
             <Link
               href="/pages/contact"

@@ -24,7 +24,7 @@ export default function ThemeButton() {
       {resolvedTheme === "dark" ? (
         <SunIcon className="h-5 w-5 text-orange-300 " />
       ) : (
-        <MoonIcon className="h-5 w-5 text-slate-600 " />
+        <MoonIcon className="h-5 w-5 text-slate-700 " />
       )}
     </button>
   );
