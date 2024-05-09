@@ -18,10 +18,10 @@ export default function page() {
             Explorez notre plateforme pour trouver des informations précieuses,
             des analyses approfondies et des conseils d'experts pour optimiser
             votre travail. <br />
-            "Que vous soyez un professionnel chevronné ou un novice curieux,
-            nous sommes là pour vous accompagner dans votre exploration de la
+            Que vous soyez un professionnel chevronné ou un novice curieux, nous
+            sommes là pour vous accompagner dans votre exploration de la
             machine. Rejoignez-nous, alors que nous repoussons les frontières de
-            l'efficacité et de la productivité industrielle"
+            l&apos;efficacité et de la productivité industrielle.
           </p>
         </div>
       </div>
