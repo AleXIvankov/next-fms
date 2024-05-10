@@ -34,8 +34,8 @@ export default function Cards() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                       src="/img/gears.svg"
-                      height="300"
-                      width="400"
+                      width={500}
+                      height={500}
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
@@ -76,8 +76,8 @@ export default function Cards() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                       src="/img/gears.svg"
-                      height="300"
-                      width="400"
+                      width={500}
+                      height={500}
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
@@ -118,8 +118,8 @@ export default function Cards() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                       src="/img/gears.svg"
-                      height="300"
-                      width="400"
+                      width={500}
+                      height={500}
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl border border-solid border-black"
                       alt="thumbnail"
                     />

@@ -2,6 +2,7 @@
 
 import React from "react";
 import ThemeButton from "./ThemeButton";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Bars3Icon,
@@ -31,8 +32,10 @@ export default function Header() {
             </h1>
           </div>
         </Link>
-        <img
+        <Image
           src="/img/Hager-Logo.svg"
+          width={500}
+          height={500}
           alt="hager-logo"
           className="w-full h-10"
         />

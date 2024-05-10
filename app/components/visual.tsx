@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react";
 import classNames from "classnames";
 import { useFeatureStore } from "../zustand/store";
+import Image from "next/image";
 
 type Props = {
   id: string;
@@ -30,9 +31,14 @@ export const ShowImages = ({ id }: Props) => {
     <Visual id={id}>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slide={false}>
-          <img src="/img/Midnight.svg" alt="..." />
-          <img src="/img/gears.svg" alt="..." />
-          <img src="/img/disjoncteurs.svg" alt="..." />
+          <Image src="/img/Midnight.svg" width={500} height={500} alt="..." />
+          <Image src="/img/gears.svg" width={500} height={500} alt="..." />
+          <Image
+            src="/img/disjoncteurs.svg"
+            width={500}
+            height={500}
+            alt="..."
+          />
         </Carousel>
       </div>
     </Visual>
@@ -44,9 +50,14 @@ export const OtherShowImages = ({ id }: Props) => {
     <Visual id={id}>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slide={false}>
-          <img src="/img/abstractions.png" alt="..." />
-          <img src="/img/Hager-Logo.svg" alt="..." />
-          <img src="/img/hagerForum.svg" alt="..." />
+          <Image
+            src="/img/abstractions.png"
+            width={500}
+            height={500}
+            alt="..."
+          />
+          <Image src="/img/Hager-Logo.svg" width={500} height={500} alt="..." />
+          <Image src="/img/hagerForum.svg" width={500} height={500} alt="..." />
         </Carousel>
       </div>
     </Visual>

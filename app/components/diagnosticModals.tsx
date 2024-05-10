@@ -8,6 +8,7 @@ import {
 } from "@nextui-org/modal";
 import { Button } from "flowbite-react";
 import { Carousel } from "flowbite-react";
+import Image from "next/image";
 import React from "react";
 
 export const MyContent = () => {
@@ -39,9 +40,24 @@ export const MyContent = () => {
               <ModalHeader className="flex flex-col my-5">Titre</ModalHeader>
               <ModalBody className="w-full h-auto">
                 <Carousel slide={false} className="">
-                  <img src="/img/disjoncteurs.svg" alt="..." />
-                  <img src="/img/hagerForum.svg" alt="..." />
-                  <img src="/img/gears.svg" alt="..." />
+                  <Image
+                    src="/img/disjoncteurs.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
+                  <Image
+                    src="/img/hagerForum.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
+                  <Image
+                    src="/img/gears.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
                 </Carousel>
               </ModalBody>
               <ModalFooter>
@@ -90,9 +106,24 @@ export const MyContent1 = () => {
                 </p>
 
                 <Carousel slide={true} className="my-5">
-                  <img src="/img/disjoncteurs.svg" alt="..." />
-                  <img src="/img/hagerForum.svg" alt="..." />
-                  <img src="/img/gears.svg" alt="..." />
+                  <Image
+                    src="/img/disjoncteurs.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
+                  <Image
+                    src="/img/hagerForum.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
+                  <Image
+                    src="/img/gears.svg"
+                    width={500}
+                    height={500}
+                    alt="..."
+                  />
                 </Carousel>
               </ModalBody>
               <ModalFooter>

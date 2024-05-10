@@ -15,14 +15,12 @@ export default function FooterComponent() {
           <Footer.LinkGroup col className="text-sky-600 ">
             <Link
               href="/about"
-              rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
               About
             </Link>
             <Link
               href="/pages/contact"
-              rel="noopener noreferrer"
               className=" hover:text-sky-800 no-underline hover:underline"
             >
               Contact
