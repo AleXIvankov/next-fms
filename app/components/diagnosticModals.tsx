@@ -158,7 +158,7 @@ export const MyContent2 = () => {
 
 export const MyContent3 = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const [scrollBehavior, setScrollBehavior] = React.useState("inside");
+
   return (
     <>
       <Button
@@ -174,16 +174,17 @@ export const MyContent3 = () => {
         backdrop="opaque"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
+        scrollBehavior={"inside"}
         classNames={{
           backdrop:
-            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
+            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20 ",
         }}
       >
-        <ModalContent className="w-full h-5/6 items-end bg-indigo-300 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-300 text-white ">
+        <ModalContent className="w-full h-5/6 items-end bg-indigo-300 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-300 text-white  ">
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col my-5">Titre</ModalHeader>
-              <ModalBody>
+              <ModalBody className="scroll-smooth focus:scroll-auto">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nullam pulvinar risus non risus hendrerit venenatis.

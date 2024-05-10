@@ -46,10 +46,11 @@ export default function Header() {
           </div>
         </span>
       </div>
+
       <div
         className={
           menuOpen
-            ? "sticky sm:fixed right-0 top-20 p-5 sm:w-[65%] md:w-[35%] xl:w-[25%] h-auto bg-sky-200 rounded-bl-2xl rounded-tr-2xl shadow-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-b border-t border-indigo-600/50 ease-in duration-500"
+            ? "absolute right-0 top-20 p-5 sm:w-[65%] md:w-[35%] xl:w-[25%] h-100% min-h-screen w-screen bg-sky-200 rounded-bl-2xl rounded-tr-2xl shadow-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-l border-b border-t border-indigo-600/50 ease-in duration-500"
             : "fixed right-[-100%] top-20 p-5 duration-500"
         }
       >
